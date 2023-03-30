@@ -1,0 +1,50 @@
+I.	Khai báo biến
+-	Cú pháp của biến bắt đầu bằng “$” sau đó có thể  điền các chữ, số và dấu gạch dưới
+-	Ký tự đầu tiên không được là số
+-	Có phân biệt lowercase và uppercase
+-	Truyền biến hay gán giá trị -> sử dụng “=”
+-	Thay vì xuất trực tiếp chuỗi thì xuất giá trị ra màn hình
+-	Quy tắc đặt tên:
++ không bắt đầu bằng số
++ không chứa khoảng trắng, không có dấu
+-	Các loại biến:
++ toàn cục: nằm ngoài chương trình, có thể sử dụng tự do
++ cục bộ: khai báo ở đâu thì dùng ở đấy
++ hằng số: mang giá trị không đổi
+II.	Cài đặt môi trường và code editor để làm việc với PHP
+-	Web servers:
++ Apache 
++ Nginx
+-	Những điều cần lưu ý khi cài đặt
++ Không cài đặt nhiều phiên bản của PHP và MySQL
++ Không dành cho sản phẩm chính thức
++ Gặp nhiều khó khăn trong việc quản lý nhiều dự án
++ Chỉ hoạt động với máy cục bộ
+-	Chạy chương trình có 2 cách:
++ Sử dụng localhost qua duyệt trình mà người dùng sử dụng
++ sử dụng câu lệnh PHP –s ở trong terminal
+III.	Kiểu dữ liệu
+a.	Integer
+-	Không sử dụng dấu nháy để bao quanh và kiểu dữ liệu của int là 32 bit
+-	PHP không hỗ trợ nhiều số nguyên dương nên trong trường hợp sử dụng số quá lớn thì biên dịch sẽ dùng float (cho tùy trường hợp)
+-	Ép kiểu int: (int)$so_nguoi
+b.	Boolean
+-	Chỉ chứa 2 giá trị true và false
+-	Không phân biệt case sensitive 
+-	Các ký tự 0, khoảng trống và null được quy ra giá trị false, còn lại quy về true
+-	Ép kiểu Boolean: (bool)$bool
+c.	Float, double
+-	Kích cỡ phụ thuộc vào từng flatform
+-	Ép kiểu float: (float)$x
+-	Ép kiểu double: (float)$y
+d.	String
+-	String bao gồm các char, mỗi char tương ứng với 1 byte
+-	Phải được bao quanh bằng dấu nháy đơn hoặc dấu nháy kép
+e.	Array
+-	Array sẽ bao gồm mảng 1 chiều và mảng đa chiều
+-	Trong PHP các phần tử của mảng có thể không cùng 1 kiểu dữ liệu 
+f.	Object
+-	1 class là khuôn mẫu cho các object, và 1 object là 1 đại diện cho class
+-	Khi các object khác nhau được tạo ra,  chúng có thể kế thừa những gì mà class có, nhưng mỗi object sẽ có các giá trị khác nhau.
+g.	Null
+-	Null là để chỉ đến các biến mà chưa có giá trị đính được đính vào cho nó.
